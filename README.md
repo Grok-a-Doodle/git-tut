@@ -144,3 +144,15 @@ It does however create a new commit that applies these changes with the "Revert 
 ```sh
   git reset --soft <commit> #This will change the branch head to said commit and keep the changes made in the current commit in the staging area "can see this using -> git status"
 ```
+
+#### Moving files in Git using git mv vs just mv commands
+
+```sh
+  git mv <filename> <foldername> #This will move it into folder and git will stage the changes and delete the file
+
+  # Other option is to do it via shell commands but need to do staging and deleting manually
+  mv <filename> <foldername>
+
+  git add <foldername>/<filename>
+  git rm <filename>
+```
