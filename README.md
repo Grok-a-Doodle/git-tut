@@ -99,3 +99,12 @@ Super useful one for getting a commit by the commit message:
 
 Below is a link that explores some more `sh git log`options:
 ![https://www.w3docs.com/learn-git/git-log.html]
+
+#### Git tag
+
+Some common uses for Git tags include marking releases, marking significant milestones in development, and indicating a specific version of a project that corresponds to a particular environment or configuration.
+
+```sh
+  git tag <tagname> #this will enable you to jump to said commit using tag name such as command below:
+  git checkout <tagname>
+```
