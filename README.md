@@ -156,3 +156,5 @@ It does however create a new commit that applies these changes with the "Revert 
   git add <foldername>/<filename>
   git rm <filename>
 ```
+
+[Link for GitHowTo tutorial](https://githowto.com/)
