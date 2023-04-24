@@ -124,3 +124,17 @@ Some common uses for Git tags include marking releases, marking significant mile
   git checkout <filename>
 
 ```
+
+#### To undo a commit and its changes in file
+
+It does however create a new commit that applies these changes with the "Revert <commit name>"
+
+```sh
+  git revert HEAD --no-edit #--no-edit so that it doesn't open the editor in terminal
+```
+
+#### Difference between reset --soft and revert above
+
+```sh
+  git reset --soft <commit> #This will change the branch head to said commit and keep the changes made int he current commit in the staging area
+```
