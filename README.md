@@ -105,6 +105,12 @@ Below is a link that explores some more `sh git log`options:
 Some common uses for Git tags include marking releases, marking significant milestones in development, and indicating a specific version of a project that corresponds to a particular environment or configuration.
 
 ```sh
-  git tag <tagname> #this will enable you to jump to said commit using tag name such as command below:
+  git tag <tagname> #This will enable you to jump to said commit using tag name such as command below:
   git checkout <tagname>
+```
+
+#### Using the bellow command will remove any changes made to a file that you wish not to keep (discard)
+
+```sh
+  git checkout <filename>  #This will cause you to discard changes made in said file. You will lose it if you have not staged it before.
 ```
