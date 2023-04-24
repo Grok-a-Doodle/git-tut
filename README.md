@@ -104,6 +104,8 @@ Below is a link that explores some more `sh git log`options:
 
 Some common uses for Git tags include marking releases, marking significant milestones in development, and indicating a specific version of a project that corresponds to a particular environment or configuration.
 
+> We can see that the wrong commits are not gone. They are not listed in the master branch anymore but still remain in the repository. They would still be in the repository if we did not tag them, but then we could reference them only by their hash names. Unreferenced commits remain in the repository until the garbage collection software is run by system.
+
 ```sh
   git tag <tagname> #This will enable you to jump to said commit using tag name such as command below:
   git checkout <tagname>
