@@ -98,13 +98,17 @@ Super useful one for getting a commit by the commit message:
 ```
 
 Below is a link that explores some more `sh git log`options:
-![https://www.w3docs.com/learn-git/git-log.html]
+[resource from w3docs](https://www.w3docs.com/learn-git/git-log.html)
 
 #### Git tag
 
 Some common uses for Git tags include marking releases, marking significant milestones in development, and indicating a specific version of a project that corresponds to a particular environment or configuration.
 
 > We can see that the wrong commits are not gone. They are not listed in the master branch anymore but still remain in the repository. They would still be in the repository if we did not tag them, but then we could reference them only by their hash names. Unreferenced commits remain in the repository until the garbage collection software is run by system.
+
+> By deleting the tag -> permit the garbage collector to delete referenced commit.
+
+Link for reading more about git garbage collector [resource](https://mohitgoyal.co/2018/08/31/understanding-git-garbage-collection/)
 
 ```sh
   git tag <tagname> #This will enable you to jump to said commit using tag name such as command below:
@@ -138,5 +142,5 @@ It does however create a new commit that applies these changes with the "Revert 
 #### Difference between reset --soft and revert above
 
 ```sh
-  git reset --soft <commit> #This will change the branch head to said commit and keep the changes made int he current commit in the staging area
+  git reset --soft <commit> #This will change the branch head to said commit and keep the changes made in the current commit in the staging area "can see this using -> git status"
 ```
