@@ -114,3 +114,13 @@ Some common uses for Git tags include marking releases, marking significant mile
 ```sh
   git checkout <filename>  #This will cause you to discard changes made in said file. You will lose it if you have not staged it before.
 ```
+
+#### Unstage a change and thereafter discard any changes made in said file
+
+```sh
+  git restore --staged <filename> #Clears the buffer zone from the changes we have just staged, it however does not remove the changes made in said file. Just unstages!
+
+  #To remove/discard changes from file, you will need to follow it up with the below command
+  git checkout <filename>
+
+```
